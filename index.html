@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 	
    <script type="" src="index.js"></script>
 	<!-- CSS only -->
@@ -269,16 +270,84 @@ border-bottom: 2px solid black;
 
 /*services*/
 
+.Services h1{
+	 font-family: 'Merienda One', cursive;
+      font-size: 50px;
+      color: #ba7d7d;
+}
 
-
-
-
- .action h3{
-	text-align: center;
+.Services h1 span{
+	 color: #f08181;
 }
 
 
-	</style>		
+ .action{
+ 	padding-top: 15px;
+	text-align: center;
+	font-family: 'Merienda One', cursive;
+	color: #26345a;
+
+}
+
+.action1{
+	text-align: center;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+	color: black;
+
+}
+
+.box img{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+
+/*footer*/
+
+.list-unstyled{
+	color: white;
+}
+
+.foot-icon{
+	color: white;
+	font-size: 25px;
+	padding: 5px;
+}
+
+.foot-icon:hover{
+	color: blue;
+	 -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.list-unstyled a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+}
+
+.cont-start{
+	font-family: 'Merienda One', cursive;
+	color: black;
+    font-size: 25px;
+}
+
+.cont-start p{
+	 font-family: 'Courgette', cursive;
+}
+
+.cont-head{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+
+.foot-p{
+	font-family: 'Roboto', sans-serif;
+}
+	</style>
+
 	
 </head>
 <body>
@@ -295,8 +364,8 @@ border-bottom: 2px solid black;
       <a class="nav-item nav-link active ml-2 mr-3" href="#Home">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link mr-3 ml-2" href="#About">About Us</a>
        <a class="nav-item nav-link mr-3 ml-2" href="#Store">Menu </a>
-        <a class="nav-item nav-link mr-3 ml-2" href="#">Location</a>
-      <a class="nav-item nav-link mr-5 pr-5 ml-2" href="#">Contact Us</a>
+        <a class="nav-item nav-link mr-3 ml-2" href="#Bussiness">Location</a>
+      <a class="nav-item nav-link mr-5 pr-5 ml-2" href="#footer">Contact Us</a>
       <a class="nav-icon ml-5 " href="#"><i class="fab fa-instagram"></i></a>
         <a class="nav-icon ml-4" href="#"><i class="fab fa-twitter"></i></a>
           <a class="nav-icon ml-4" href="#"><i class="fab fa-facebook"></i></a>
@@ -855,44 +924,175 @@ border-bottom: 2px solid black;
 	       	</div>
 	       </section>
 
-       <section id="Bussiness Location" class="py-5 Services">
+
+
+
+       <section id="Bussiness" class="py-5 Services">
        <div class="container pt-5">
-       	<h1 align="center">Location & Services </h1>
+       	<h1 align="center">Location & <span> Services </span></h1>
 
        	<div class="row pt-5">
 
-       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4 " class="action">
-       			<div class="box" align="center" pb-3><i class="fa fa-"></i></div>
-                <h3 align="center">HEALTHY FOODS</h3>
-       			<p align="center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4 ">
+       			<div class="box" align="center"><img src="https://cdn.pixabay.com/photo/2017/11/25/17/17/sandwich-2977251__340.jpg"></div>
+                <h3 align="center" class="action">HEALTHY FOODS</h3>
+       			<p align="center" class="action1">Cake Bake provide Healthy food for our Customer. Cake Bake takes care of the needs of its customers.</p>
        		</div>
 
-       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4 " class="action">
-       			<div class="box" align="center" pb-3><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
-                <h3 align="center">FASTEST DELIVERY</h3>
-       			<p align="center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4 ">
+       			<div class="box" align="center"><img src="https://cdn.pixabay.com/photo/2020/02/28/08/50/courier-driver-4886839__340.jpg"></div>
+                <h3 align="center" class="action">FASTEST DELIVERY</h3>
+       			<p align="center" class="action1">Cake Bake Services is very punctual. It does not give its customers a chance to complain in service.</p>
        		</div>
 
-       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4  " class="action">
-       			<div class="box" align="center" py-3><i class="fa fa-"></i></div>
-                <h3 align="center">ORIGINAL RECIPES</h3>
-       			<p align="center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4  ">
+       			<div class="box" align="center"><img src="https://th.bing.com/th/id/OIP.50dmZhjX0RpjgfJGvovt3gHaE8?w=274&h=183&c=7&o=5&pid=1.7"></div>
+                <h3 align="center" class="action">ORIGINAL RECIPES</h3>
+       			<p align="center" class="action1">Cake Bake Work With Complete Hygiene. cake bake uses the original recipe of making food,what make it different. </p>
        		</div>
        	</div>
+        <div class="row">
 
-        <div class="col-10 col-md-12 py-5 mx-auto col-lg-12">
-        	
-        	<div class="google-maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d56939.00355900873!2d75.83566555195682!3d26.88166088394409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e0!4m0!4m4!2s26.88160708568961%2C%2075.87087830395065!3m2!1d26.8816071!2d75.8708783!5e0!3m2!1sen!2sin!4v1595134745266!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+        <div class="col-10 col-md-12 py-5 mx-auto ">
+          
+          <div class="google-maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22664.173043626324!2d75.83244949089398!3d25.147007486935834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f84de9a0153a1%3A0xbcba7bcc8c5025e8!2sVaidya%20Dau%20Dayal%20Joshi%20Government%20Ayurvedic%20Hospital!5e0!3m2!1sen!2sin!4v1595181468285!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
   </div>
 
         </div>
-
-
-
-
+     </div>
        	</div>
        </section>
+
+
+
+
+
+     <!-- Footer -->
+<footer  id="footer" class="page-footer font-small mdb-color lighten-3 pt-4" style="background-color: #6dceae;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4 cont-start">CAKE BAKE</h5>
+        <p style="color: white;" class="foot-p">We Keep traditions of Baking.<br>We use only the finest quality ingredients.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4 cont-head">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">PROJECTS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">ABOUT US</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BLOG</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">AWARDS</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4 cont-head" >Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i>New Jawahar Nagar, Talwandi, Kota, Rajasthan</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>likesky378@gmail.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 8505053375</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 9413069885</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4 cont-head" >Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb foot-icon">
+          <i class="fab fa-facebook-f" ></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw foot-icon">
+          <i class="fab fa-twitter" ></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus foot-icon">
+          <i class="fab fa-instagram" ></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble foot-icon">
+          <i class="fab fa-youtube" ></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: white"> cake bake</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </body>
 </html>
