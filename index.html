@@ -8,7 +8,10 @@
 	<title>Bakery and Restaurant Page</title>
 	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Satisfy&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	
+   <script type="" src="index.js"></script>
 	<!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -16,9 +19,10 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
- 
+
 	<style>
-	*{
+		
+		*{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -64,9 +68,11 @@ border-bottom: 2px solid black;
 
 .nav-btn{
 	font-size: 25px;
-	color: #ef7998;
-	background-color:black;
-	border-radius: 6px;
+	color: #F2C64D;
+	border:2px solid  #F2C64D;
+	text-decoration: none;
+	border-radius: 10px;
+	font-weight: bold;
 }	
 
 .nav-btn span {
@@ -74,11 +80,12 @@ border-bottom: 2px solid black;
 }
 
 .nav-btn:hover{
-	color: white;
+	color: black;
+	background-color: #F2C64D;
 }
 
 .nav-link:hover{
-        color: black;
+        color:  #F2C64D;
        }
 
 
@@ -120,7 +127,7 @@ border-bottom: 2px solid black;
 	color: #ab5c5c;
 	font-size: 60px;
 	margin-top: 10px;
-	color:#fff;
+	color:#ff8c8c;
 	 font-family: 'Merienda One', cursive;
 }
 
@@ -136,9 +143,9 @@ border-bottom: 2px solid black;
 }
 
 .btn1:hover{
-	background: #c19595;
-	color: black;
-	border: 2px solid #c19595;
+	background:black;
+	color: #ff8c8c;
+	border: 2px solid #000;
 }
 
 /* about section*/
@@ -157,6 +164,12 @@ border-bottom: 2px solid black;
 
 }
 
+.container .word{
+	font-family: 'Merienda One', cursive;
+	color: #6c757d;
+	
+}
+
  .container .btn2{
 	margin-top: 10px;
 	border: 2px solid black;
@@ -166,6 +179,23 @@ border-bottom: 2px solid black;
 	font-family: 'Merienda One', cursive;
 	background: transparent;
 	color: black;
+}
+
+.sub-about{
+	font-family: 'Lobster', cursive;
+	color: #bb6666;
+}
+
+.qualities h3{
+	font-family: 'Merienda One', cursive;
+	color:#667cbb;
+}
+
+.qualities p{
+	color: black;
+	font-weight: bold;
+	color: #6c757d;
+	font-family: 'Courgette', cursive;
 }
 
 .btn2:hover{
@@ -231,7 +261,24 @@ border-bottom: 2px solid black;
 .card .card-text{
 	font-family: 'Merienda One', cursive;
 }
-	</style>	
+
+.card-body p{
+	font-family: 'Courgette', cursive;
+
+}
+
+/*services*/
+
+
+
+
+
+ .action h3{
+	text-align: center;
+}
+
+
+	</style>		
 	
 </head>
 <body>
@@ -247,7 +294,7 @@ border-bottom: 2px solid black;
     <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link active ml-2 mr-3" href="#Home">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link mr-3 ml-2" href="#About">About Us</a>
-       <a class="nav-item nav-link mr-3 ml-2" href="#Menu">Menu </a>
+       <a class="nav-item nav-link mr-3 ml-2" href="#Store">Menu </a>
         <a class="nav-item nav-link mr-3 ml-2" href="#">Location</a>
       <a class="nav-item nav-link mr-5 pr-5 ml-2" href="#">Contact Us</a>
       <a class="nav-icon ml-5 " href="#"><i class="fab fa-instagram"></i></a>
@@ -279,7 +326,7 @@ border-bottom: 2px solid black;
 	           		<div class="row">
 	           			<div class=" col-10 col-md-5 my-5 mx-auto ">
 	           				<h3 class="heading">About <span> Us</span></h3>
-	           				<p> Cake Bake is launched in kota 2 years ago, Cake Bake has grown from a home project to one of the largest bakery store in the kota city. Cake Bake, is known for our tasty baked goods, sweets and cakes. We are present in 24 cities in india and enabling our vision of better bakery products for more people. We not only connect people to food in every context but work closely with restaurants to enable a sustainable ecosystem. We push ourselves beyond our abilities when faced with tough times. When we foresee uncertainty, we address it only with flexibility. Feedback is never taken personally, we break it into positive pieces and strive to work on each and every element even more effectively. </p>
+	           				<p class="word"> Cake Bake is launched in kota 2 years ago, Cake Bake has grown from a home project to one of the largest bakery store in the kota city. Cake Bake, is known for our tasty baked goods, sweets and cakes. We are present in 24 cities in india and enabling our vision of better bakery products for more people. We not only connect people to food in every context but work closely with restaurants to enable a sustainable ecosystem. We push ourselves beyond our abilities when faced with tough times. When we foresee uncertainty, we address it only with flexibility. Feedback is never taken personally, we break it into positive pieces and strive to work on each and every element even more effectively. </p>
 	           				<button class="btn2">EXPLORE </button>
 	           			</div>
 	           			<div class=" col-10 col-lg-5 my-5 mx-auto">
@@ -305,7 +352,7 @@ border-bottom: 2px solid black;
 	       </section>
 
 
-	       <section id="Store py-5" class="menu">
+	       <section id="Store" class="menu py-5">
 
 	       	<div class="container pt-5">
 	       		<div class="row">
@@ -338,7 +385,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">doughnuts</h5>
-                       		<h5 class="store-item-value">$20</h5>
+                       		<h5 class="store-item-value">₹ 250/-</h5>
                        </div>
                        <p align="center">Crispy and Creamy Doughnuts We have tried so many versions of glazed American-style doughnuts, and this one finally came out perfect!</p>
                      </div>
@@ -354,7 +401,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Frozen Yogurt</h5>
-                       		<h5 class="store-item-value">$15</h5>
+                       		<h5 class="store-item-value">₹ 450/-</h5>
                        </div>
                        <p align="center">Ridiculously popular in the U.S. especially, frozen yogurt got its mainstream debut in 1981, thanks to TCBY. It's based on the model of soft-serve but is lower in fat and offers a tangy taste, thanks to, well, the yogurt</p>
                      </div>
@@ -370,7 +417,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Chocolate Chip Cookies</h5>
-                       		<h5 class="store-item-value">$10</h5>
+                       		<h5 class="store-item-value">₹ 90/-</h5>
                        </div>
                        <p align="center">Among the most popular of all cookie types, the chocolate chip cookie's. Chocolate chip cookies are drop cookies that can be soft and doughy or crisp and crunchy.</p>
                      </div>
@@ -386,7 +433,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Rolled Ice Cream</h5>
-                       		<h5 class="store-item-value">$12</h5>
+                       		<h5 class="store-item-value">₹ 220/-</h5>
                        </div>
                        <p align="center">In Rolled Ice Cream entire process — pouring the ice cream mixture, chopping, mixing add-ins (like strawberries and Oreos), and perfectly spiraling the ice cream — only takes about two minutes. </p>
                      </div>
@@ -402,7 +449,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Butter Cake</h5>
-                       		<h5 class="store-item-value">$12</h5>
+                       		<h5 class="store-item-value">₹ 300/-</h5>
                        </div>
                        <p align="center">Any recipe for cake that begins "cream butter and sugar" is a butter cake. After the creaming, you add eggs to aerate the batter a bit, flour to give it structure and texture, and baking powder or baking soda to ensure that it rises in the oven.</p>
                      </div>
@@ -418,7 +465,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Pound cake</h5>
-                       		<h5 class="store-item-value">$15</h5>
+                       		<h5 class="store-item-value">₹ 550/-</h5>
                        </div>
                        <p align="center">Pound Cake is a relative of butter cake. It's so called because it can be measured as a matter of proportion: a pound of butter, a pound of sugar, a pound of eggs, and a pound of flour.</p>
                      </div>
@@ -434,7 +481,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Kulfi</h5>
-                       		<h5 class="store-item-value">$5</h5>
+                       		<h5 class="store-item-value">₹ 120/-</h5>
                        </div>
                        <p align="center">This frozen dessert is made with milk that's been cooked down, sweetened, flavored, and frozen in moulds. It's like an ice cream popsicle and comes in traditional flavors like rose, pistachio, and mango.</p>
                      </div>
@@ -449,7 +496,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Chocolate Frosted Doughnut</h5>
-                       		<h5 class="store-item-value">$15</h5>
+                       		<h5 class="store-item-value">₹ 150/-</h5>
                        </div>
                        <p align="center">Covered with chocolate layer and sprinkles, this doughnut is definitely for chocolate lovers.It is very delicious.</p>
                      </div>
@@ -464,7 +511,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Sorbet</h5>
-                       		<h5 class="store-item-value">$15</h5>
+                       		<h5 class="store-item-value">₹ 300/-</h5>
                        </div>
                        <p align="center">There's no dairy in this fruit-forward frozen treat, making it denser and much richer in taste than traditional ice cream. </p>
                      </div>
@@ -479,7 +526,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">cadbury</h5>
-                       		<h5 class="store-item-value">$5</h5>
+                       		<h5 class="store-item-value">₹ 50/-</h5>
                        </div>
                        <p align="center">Cadbury is most popular during the Easter season. Most of us are familiar with its chocolate eggs and bunnies.</p>
                      </div>
@@ -494,7 +541,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Cream-Filled Doughnut </h5>
-                       		<h5 class="store-item-value">$20</h5>
+                       		<h5 class="store-item-value">₹ 250/-</h5>
                        </div>
                        <p align="center">These doughnuts are soft pillows with an easy cream filling. The cream filling couldn't be easier. It's made with instant vanilla pudding.</p>
                      </div>
@@ -509,7 +556,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Mint Oreo Cake</h5>
-                       		<h5 class="store-item-value">$12</h5>
+                       		<h5 class="store-item-value">₹ 200/-</h5>
                        </div>
                        <p align="center">Hands up who loves Oreos! This Mint Oreo cake is to die for - a dark and decadent chocolate cake with layers of mint and crushed Oreo ...</p>
                      </div>
@@ -525,7 +572,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Jelly Doughnut</h5>
-                       		<h5 class="store-item-value">$5</h5>
+                       		<h5 class="store-item-value">₹ 120/-</h5>
                        </div>
                        <p align="center">A jelly (or jam) doughnut is a doughnut stuffed with jelly filling. These light doughnuts will be the hit of any autumn or winter brunch. </p>
                      </div>
@@ -541,7 +588,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Strawberry Frosted Doughnut</h5>
-                       		<h5 class="store-item-value">$20</h5>
+                       		<h5 class="store-item-value">₹ 250/-</h5>
                        </div>
                        <p align="center">With fresh strawberries baked in, and a sweet, tangy pink strawberry icing, these are a perfect treat for breakfast.</p>
                      </div>
@@ -557,7 +604,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">rasmalai</h5>
-                       		<h5 class="store-item-value">$30</h5>
+                       		<h5 class="store-item-value">₹ 300/-</h5>
                        </div>
                        <p align="center">Ras malai-Ras literally translates to "juice" and malai to "cream". Rasmalai is a Bengali delicasy. </p>
                      </div>
@@ -572,8 +619,8 @@ border-bottom: 2px solid black;
                         </div>
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
-                       		<h5 class="store-item-name">sWeet</h5>
-                       		<h5 class="store-item-value">$20</h5>
+                       		<h5 class="store-item-name">Dessert Falooda</h5>
+                       		<h5 class="store-item-value">₹ 250/-</h5>
                        </div>
                        <p align="center">This delicious dessert Falooda is made by layering sabja seeds, Vermicelli, rose syrup, then topped withed chilled milk and ice cream.</p>
                      </div>
@@ -589,7 +636,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Red Velvet Cake</h5>
-                       		<h5 class="store-item-value">$20</h5>
+                       		<h5 class="store-item-value">₹ 250/-</h5>
                        </div>
                        <p align="center">Red velvet cake is essentially a butter cake, though it is frequently made with oil instead of butter. In addition, cocoa is added to the cake batter to create the distinct red velvet flavor. </p>
                      </div>
@@ -605,7 +652,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Garlic Bread Rolls</h5>
-                       		<h5 class="store-item-value">$25</h5>
+                       		<h5 class="store-item-value">₹ 150/-</h5>
                        </div>
                        <p align="center">Garlic bread rolls with step by step photos – soft and delicious bread rolls with a flavor of garlic in each bite. These eggless garlic bread rolls are made with.</p>
                      </div>
@@ -621,7 +668,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Masala Chai</h5>
-                       		<h5 class="store-item-value">$5</h5>
+                       		<h5 class="store-item-value">₹ 50/-</h5>
                        </div>
                        <p align="center">Traditional masala chai, or what most Americans know simply as chai, is black tea and milk combined with a blend of cinnamon, cardamom, ginger, cloves, black pepper, fennel, and star anise. A perfect end to any great Indian meal.</p>
                      </div>
@@ -637,7 +684,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Fruit Bread</h5>
-                       		<h5 class="store-item-value">$10</h5>
+                       		<h5 class="store-item-value">₹ 90/-</h5>
                        </div>
                        <p align="center">Fruit bread recipe – this is an easy, light and healthy fruit bread recipe. This fruit bread is an eggless bread Made with whole wheat flour in a larger proportion.</p>
                      </div>
@@ -653,7 +700,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Mango Lassi</h5>
-                       		<h5 class="store-item-value">$15</h5>
+                       		<h5 class="store-item-value">₹ 90/-</h5>
                        </div>
                        <p align="center">Mango lassi is another way to cool down if you had a heavy hand with the chili peppers. It's basically a mango milkshake or smoothie made with milk, yogurt, fresh mango puree, and a few aromatic spices.</p>
                      </div>
@@ -669,7 +716,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Kiss Cookies</h5>
-                       		<h5 class="store-item-value">$25</h5>
+                       		<h5 class="store-item-value">₹ 350/-</h5>
                        </div>
                        <p align="center">Kiss cookies are made by pressing a chocolate kiss into soft, fresh-out-of-the-oven cookies. They are fairly customizable—choose whatever base you'd like for the cookie.</p>
                      </div>
@@ -685,7 +732,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Go-To Vanilla & Chocolate Cupcakes</h5>
-                       		<h5 class="store-item-value">$5</h5>
+                       		<h5 class="store-item-value">₹ 120/-</h5>
                        </div>
                        <p align="center">Go-To Vanilla & Chocolate Cupcakes Moist, perfect cupcakes everyone will love. Recipes with photos and reviews for vanilla cupcakes, cupcake frosting, mini cupcakes and more.</p>
                      </div>
@@ -701,7 +748,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Gelato</h5>
-                       		<h5 class="store-item-value">$25</h5>
+                       		<h5 class="store-item-value">₹ 250/-</h5>
                        </div>
                        <p align="center">Italian gelato ripples and forms imperfect scoops because it is so much denser than standard American ice cream. That's because it contains a higher volume of milk than cream.</p>
                      </div>
@@ -717,7 +764,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Biscuit Cake</h5>
-                       		<h5 class="store-item-value">$7</h5>
+                       		<h5 class="store-item-value">₹ 150/-</h5>
                        </div>
                        <p align="center">Biscuit cakes are another type of sponge cake containing both egg whites and yolks, but, unlike genoise, the whites and yolks are whipped separately and then folded back together.</p>
                      </div>
@@ -733,7 +780,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Jam Bread Rolls</h5>
-                       		<h5 class="store-item-value">$25</h5>
+                       		<h5 class="store-item-value">₹ 120/-</h5>
                        </div>
                        <p align="center"> Jam bread rolls recipe with step by step photos – easy to make whole wheat bread rolls stuffed with fig jam. A vegan recipe. </p>
                      </div>
@@ -749,7 +796,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Chiffon Cake</h5>
-                       		<h5 class="store-item-value">$20</h5>
+                       		<h5 class="store-item-value">₹ 500/-</h5>
                        </div>
                        <p align="center"> A classic chiffon cake is kind of a cross between an oil cake and a sponge cake. It includes baking powder and vegetable oil, but the eggs are separated and the whites are beaten to soft peaks before being folded into the batter</p>
                      </div>
@@ -765,7 +812,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Vanilla Ice creame</h5>
-                       		<h5 class="store-item-value">$25</h5>
+                       		<h5 class="store-item-value">₹ 350/-</h5>
                        </div>
                        <p align="center">Vanilla is frequently used to flavor ice cream.Vanilla ice cream, like other flavors of ice cream, was originally created by cooling a mixture made of cream, sugar, and vanilla above a container of ice and salt.</p>
                      </div>
@@ -781,7 +828,7 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Whoopie Pies</h5>
-                       		<h5 class="store-item-value">$20</h5>
+                       		<h5 class="store-item-value">₹ 250/-</h5>
                        </div>
                        <p align="center">These sandwich-style cookies are made with two soft, pillowy cookies and a marshmallow filling. </p>
                      </div>
@@ -797,22 +844,55 @@ border-bottom: 2px solid black;
                      <div class="card-body">
                        <div class="card-text d-flex justify-content-between text-uppercase">
                        		<h5 class="store-item-name">Soft Serve</h5>
-                       		<h5 class="store-item-value">$10</h5>
+                       		<h5 class="store-item-value">₹ 90/-</h5>
                        </div>
                        <p align="center">It gets its super-smooth texture from air that's introduced as the ingredients are frozen. Available in just chocolate and vanilla, it's most often served in a cone and then dipped in chocolate or rainbow sprinkles.  </p>
                      </div>
                    </div>
                </div>
-               
+
                </div>
-
-
-
-
-
 	       	</div>
 	       </section>
 
+       <section id="Bussiness Location" class="py-5 Services">
+       <div class="container pt-5">
+       	<h1 align="center">Location & Services </h1>
+
+       	<div class="row pt-5">
+
+       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4 " class="action">
+       			<div class="box" align="center" pb-3><i class="fa fa-"></i></div>
+                <h3 align="center">HEALTHY FOODS</h3>
+       			<p align="center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+       		</div>
+
+       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4 " class="action">
+       			<div class="box" align="center" pb-3><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
+                <h3 align="center">FASTEST DELIVERY</h3>
+       			<p align="center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+       		</div>
+
+       		<div class="col-10 col-lg-4 my-2 mx-auto pt-4  " class="action">
+       			<div class="box" align="center" py-3><i class="fa fa-"></i></div>
+                <h3 align="center">ORIGINAL RECIPES</h3>
+       			<p align="center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+       		</div>
+       	</div>
+
+        <div class="col-10 col-md-12 py-5 mx-auto col-lg-12">
+        	
+        	<div class="google-maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d56939.00355900873!2d75.83566555195682!3d26.88166088394409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e0!4m0!4m4!2s26.88160708568961%2C%2075.87087830395065!3m2!1d26.8816071!2d75.8708783!5e0!3m2!1sen!2sin!4v1595134745266!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+  </div>
+
+        </div>
+
+
+
+
+       	</div>
+       </section>
 
 </body>
 </html>
